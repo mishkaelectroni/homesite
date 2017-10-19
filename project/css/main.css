@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+body {
+  background-color: #f4f4f4;
+  color: #243238;
+  font-family: "PT Sans",sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  min-width: 320px;
+  overflow: hidden;
+  width: 100%; }
+
+a {
+  color: #292929;
+  text-decoration: none;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -moz-perspective: 1000;
+  -ms-perspective: 1000;
+  perspective: 1000;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: background 0.3s ease-in-out,border-color 0.3s ease-in-out,color 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out,border-color 0.3s ease-in-out,color 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out,border-color 0.3s ease-in-out,color 0.3s ease-in-out; }
+
+header {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+#page_header {
+  z-index: 99; }
+
+.header_conteiner {
+  max-width: 1940px;
+  margin: 0 auto; }
+
+.top_pannel {
+  background: #000;
+  display: flex;
+  justify-content: space-between; }
+  .top_pannel .top_pannel_text {
+    color: #858585;
+    font-style: italic;
+    font-size: 14px;
+    line-height: 50px;
+    padding: 0 11px; }
+  .top_pannel .top_pannel_menu {
+    line-height: 50px; }
+    .top_pannel .top_pannel_menu .header_user {
+      display: inline-block; }
+      .top_pannel .top_pannel_menu .header_user a {
+        color: #fff;
+        font-size: 14px; }
+      .top_pannel .top_pannel_menu .header_user i {
+        margin-right: 5px; }
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.fa-user:before {
+  content: "\f007"; }
+
+.conteiner {
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto; }
+
+.header_wrap1 {
+  padding: 40px 0 12px;
+  -webkit-transition: padding .1s ease-in-out;
+  -moz-transition: padding .1s ease-in-out;
+  -o-transition: padding .1s ease-in-out;
+  -ms-transition: padding .1s ease-in-out;
+  transition: padding .1s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center; }
+
+.header_wrap2 {
+  margin-bottom: 10px; }
+  .header_wrap2 .logo_block {
+    display: inline-block;
+    vertical-align: top; }
+    .header_wrap2 .logo_block .header_logo {
+      display: inline-block;
+      font-size: 18px;
+      text-transform: uppercase; }
+  .header_wrap2 .header_center {
+    width: 50%;
+    text-align: center;
+    padding-bottom: 5px; }
+    .header_wrap2 .header_center .header_search {
+      height: 50px;
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 0 0 10px;
+      position: relative;
+      width: 100%; }
+      .header_wrap2 .header_center .header_search input {
+        display: block;
+        padding-right: 95px;
+        padding-left: 25px;
+        background: transparent;
+        height: 48px;
+        border-color: rgba(225, 225, 225, 0.3);
+        font-style: italic;
+        color: #fff;
+        -webkit-border-radius: 25px;
+        -moz-border-radius: 25px;
+        border-radius: 25px; }
+      .header_wrap2 .header_center .header_search button {
+        width: 95px;
+        height: 48px;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0; }
+        .header_wrap2 .header_center .header_search button .fa-search:before {
+          content: "\f002"; }
+  .header_wrap2 .header_right {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .header_wrap2 .header_right .megamenu_desktop {
+      display: inline-block; }
+    .header_wrap2 .header_right .megamenu_desktop .level_1 {
+      font-size: 0;
+      text-align: center; }
+    .header_wrap2 .header_right .header_wishlist {
+      color: #fff;
+      margin-right: 30px; }
+    .header_wrap2 .header_right .header_cart {
+      display: inline-block;
+      padding-top: 5px; }
