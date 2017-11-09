@@ -36,13 +36,11 @@ a {
     transition: background 0.3s ease-in-out,border-color 0.3s ease-in-out,color 0.3s ease-in-out;
 }
 header {
-	background: rgba(0,0,0,0.5);
 	position: absolute;
 	top:0;
 	left:0;
 	right:0;
 	.conteiner {
-		
 			.top_panel {
 				display: flex;
 				background-color: #000;
@@ -62,32 +60,79 @@ header {
 				}
 			}
 		.header_wrap {
-			background: url(image/fotoheader1.jpg);
-			height: 500px;
+			background: url(image/fotoheader2.jpg);
+			height: 800px;
+			z-index: 10;
 
-			.header_content {
+		}	
+		.header_content {
+				padding-top: 2em;
+				.top_header_content {	
+					z-index: 12;
 				width: 80%;
 				display: flex;
+				margin-right: auto;
+				margin-left: auto;
 				justify-content: space-between;
 				flex-wrap: wrap;
 				align-items: center;
-				.header_logo {
+					.header_logo {
+						color: #fff;
+					}
 
-				}
-
-				.header_search{
-
-				}
-
+					.header_search{
+						height: 50px;
+						display: inline-block;
+						vertical-align: middle;
+						position: relative;
+						width: 50%;
+						.search_form {
+							display: block;
+							width: 100%;
+							input {
+								display: block;
+								padding-right: 60%;
+								padding-left: 25px;
+								background: transparent;
+								height: 47px;
+								border-color: rgba(225,225,225,0.3);
+								font-style: italic;
+								color: #fff;
+								border-radius: 25px;
+							}
+							button {
+								width: 5em;
+								height: 47px;
+								color: #fff;
+								position: absolute;
+								right: 0;
+								top: 0;
+								border: none;
+								background: none;
+							}
+						}
+					}
+				}	
 				.header_menu {
-
-					ul li{
-						display: inline-flex;
-
+				padding-top: 2em;	
+				width: 80%;
+				display: flex;
+				margin-right: auto;
+				margin-left: auto;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				align-items: center;
+					.main_menu li {
+						margin: 0 50px 0 0;
+						display: inline-block;
+						a {
+							color: #fff;
+							font-size: 16px;
+							font-weight: 700;
+						}
 					}
 				}
 			}
-		}	
 	}
 }
 
