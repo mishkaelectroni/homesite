@@ -6,15 +6,14 @@
 	box-sizing: border-box;
 }
 body {
-	background-color: #f4f4f4;
+	background: #f4f4f4;
     color: #243238;
-    font-family: "PT Sans",sans-serif;
+    font: 16px/1.5em "Open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 13px;
-    margin: 0 auto;
-    min-width: 320px;
-    /* overflow: hidden; */
+    margin: 0 auto;   
     width: 100%;
     max-width: 1400px;
+    min-width: 670px;
 }
 a {
 	color: #292929;
@@ -37,9 +36,46 @@ a {
 }
 img {
 	max-width: 100%;
+	vertical-align: middle;
+	border-style: none;
 }
+ul li {
+		list-style: none;
+		}
+
+.header_search, .footer_search{
+						height: 50px;
+						display: inline-block;
+						vertical-align: middle;
+						position: relative;
+						width: 50%;
+						.search_form {
+							display: block;
+							width: 100%;
+							input {
+								display: block;
+								padding-right: 60%;
+								padding-left: 25px;
+								background: transparent;
+								height: 47px;
+								border-color: rgba(225,225,225,0.3);
+								font-style: italic;
+								color: #fff;
+								border-radius: 25px;
+							}
+							button {
+								width: 5em;
+								height: 47px;
+								color: #fff;
+								position: absolute;
+								right: 0;
+								top: 0;
+								border: none;
+								background: none;
+							}
+						}
+					}		
 header {
-	// position: absolute;
 	top:0;
 	left:0;
 	right:0;
@@ -84,38 +120,7 @@ header {
 						color: #fff;
 					}
 
-					.header_search{
-						height: 50px;
-						display: inline-block;
-						vertical-align: middle;
-						position: relative;
-						width: 50%;
-						.search_form {
-							display: block;
-							width: 100%;
-							input {
-								display: block;
-								padding-right: 60%;
-								padding-left: 25px;
-								background: transparent;
-								height: 47px;
-								border-color: rgba(225,225,225,0.3);
-								font-style: italic;
-								color: #fff;
-								border-radius: 25px;
-							}
-							button {
-								width: 5em;
-								height: 47px;
-								color: #fff;
-								position: absolute;
-								right: 0;
-								top: 0;
-								border: none;
-								background: none;
-							}
-						}
-					}
+					
 				}	
 				.header_menu {
 				padding: 2em 0 2em 0;	
@@ -153,18 +158,20 @@ header {
 						color: #fff;
 						font-weight: 300;
 						font-size: 2.5em;
+						padding-bottom: 0.5em;
 					}
 					h2 {
 						color: #fff;
-						font-size: 2.5em;
+						font-size: 2.3em;
 						font-weight: 700;
 					}
 				} 
 	}
 } 
-// END HEADER
+/////////////////////////////////////////////////////////////////////////////////////////// END HEADER
 .page_container {
 	margin: 1em 0 0 0;
+	display: flex;
 	.main_content {
 		flex-direction:row;
 		.conteiner_content {
@@ -209,11 +216,129 @@ header {
 			}
 		}
 	}	
-	.main_footer {
+	
+}
+/////////////////////////////////////////////////////////////////////////////////////////////////// END MAIN CONTENT
+.popular_posts {
+
+	.popular_posts_conteiner {
+		display: flex;
+		position: relative;
+		.popular_posts_one {
+			width: 50%;
+			.popular_posts_one_img {
+				background: url(image/post1.jpg);
+				padding: 60.417% 0 0 0;
+			}
+			.item_caption {
+				line-height: 1.5em;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    z-index: 10;
+			    display: flex;
+			    justify-content: flex-start;
+			    align-items: center;
+			    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+				h1 {
+
+				}
+				h2 {
+
+				}
+				.post_btn {
+					background:transparent;
+					border: 2px solid #000;
+					color: #000;
+					border-radius: 25px;
+					transform: translate3d(0, 0, 0);
+				    -webkit-transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				    -moz-transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				    transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				}
+			}
+		}
+		.popular_posts_two {
+			width: 50%;
+			.popular_posts_two_img {
+				background: url(image/post22.jpg);
+				padding: 60.417% 0 0 0;
+			}
+			.item_caption {
+				line-height: 1.5em;
+			    position: absolute;
+			    top: 0;
+			    right: 0;
+			    bottom: 0;
+			    left: 0;
+			    z-index: 10;
+			    display: flex;
+			    justify-content: flex-start;
+			    align-items: center;
+			    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+				h1 {
+
+				}
+				h2 {
+
+				}
+				.post_btn {
+					background:transparent;
+					border: 2px solid #000;
+					color: #000;
+					border-radius: 25px;
+					transform: translate3d(0, 0, 0);
+				    -webkit-transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				    -moz-transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				    transition: background 0.2s ease-in-out,border-color 0.2s ease-in-out,color 0.2s ease-in-out;
+				}
+			}
+		}
+	}
+}
+// END POPULAR POSTS
+
+.new_arrivals {
+	margin-top: 3em;
+	display: flex;
+	.new_arrivals_conteiner {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		.new_arrivals_one {
+			width: 25%;
+			background: #fff;
+			float: left;
+
+		}
+		.new_arrivals_two {
+			width: 25%;
+			background: #fff;
+			float: left;
+		}
+		.new_arrivals_three {
+			width: 25%;
+			background: #fff;
+			float: left;
+		}
+		.new_arrivals_four {
+			width: 25%;
+			background: #fff;
+			float: left;
+		}
+	}
+}
+//////////////////////////////////////////////////////////////////////////////////////////////// END NEW ARRIVALS
+.main_footer {
+		margin-top: 20px;
 		background: #1D1D1E;
+		display: flex;
 
 		.footer_conteiner {
-			width: 90%;
+			display: inline-flex;
+			width: 80%;
 			margin-left: auto;
 			margin-right: auto;
 			padding: 3em 0 2em 0;
@@ -226,23 +351,44 @@ header {
 			h2 {
 				color: #fff;
 				font-weight: 700;
+				padding-bottom: 1em;
 			}
-			.footer_info .footer_category .footer_account .footer_nwesletter{
+			.footer_info, .footer_category, .footer_account, .footer_nwesletter{
 				width: 24.75%;
-				float: left;
+				float: left;				
 
 			}
 			.footer_category {
-
 			}
 			.footer_account {
 
 			}
 			.footer_nwesletter {
-				
+				.footer_search {
+					margin: 1em 0 1em 0;
+				}
 			}
 		}
+
 	}
-}
+	.footer_copyright {
+		background: #000;
+		.footer_conteiner{
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 1em 0 1em 0;
+			background: #000;
+		}
+			p{
+				color: #fff;
+			}
+			a {
+				color: #F4540F;
+			}
+			a:hover{
+				color: #fff;
+			}
+		}
 
 
