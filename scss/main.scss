@@ -12,6 +12,7 @@ body {
     font-size: 13px;
     margin: 0 auto;   
     width: 100%;
+    height: 100%;
     max-width: 1400px;
     min-width: 670px;
 }
@@ -172,57 +173,70 @@ header {
 .page_container {
 	margin: 1em 0 0 0;
 	display: flex;
-	.main_content {
-		flex-direction:row;
 		.conteiner_content {
 		width: 80%;
 		margin-right: auto;
 		margin-left: auto;
 			.main_page_category_one {
 				.block_one {
-					clear: left;
-					width: 33%;
-					float: left;
-					min-height: 1px;
+					width: 33.33333333%;
+				    float: left;
+				    min-height: 1px;
+				    margin: 35px 0 0 0;
+				    position: relative;
+				    padding: 0 0 0 15px;
 				}
 				.block_two {
-					width: 33%;
-					float: left;
-					min-height: 1px;
+					width: 33.33333333%;
+				    float: left;
+				    min-height: 1px;
+				    margin: 35px 0 0 0;
+				    position: relative;
+				    padding: 0 0 0 15px;
 				}
 				.block_three {
-					width: 33%;
-					float: left;
-					min-height: 1px;
+					width: 33.33333333%;
+				    float: left;
+				    min-height: 1px;
+				    margin: 35px 0 0 0;
+				    position: relative;
+				    padding: 0 0 0 15px;
 				}
 			}
 			.main_page_category_two {
 				.block_one {
-					clear: left;
-					width: 33%;
-					float: left;
-					min-height: 1px;
+					    width: 33.33333333%;
+					    float: left;
+					    min-height: 1px;
+					    margin: 35px 0 0 0;
+					    position: relative;
+					    padding: 0 0 0 15px;
 				}
-				.block_two {
-					width: 33%;
-					float: left;
-					min-height: 1px;
+				.block_two {    
+					width: 33.33333333%;
+				    float: left;
+				    min-height: 1px;
+				    margin: 35px 0 0 0;
+				    position: relative;
+				    padding: 0 0 0 15px;
 				}
 				.block_three {
-					width: 33%;
-					float: left;
-					min-height: 1px;
+					width: 33.33333333%;
+				    float: left;
+				    min-height: 1px;
+				    margin: 35px 0 0 0;
+				    position: relative;
+				    padding: 0 0 0 15px;
 				}
 			}
-		}
-	}	
+		}	
 	
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////// END MAIN CONTENT
 .popular_posts {
-
+	margin: 1em 0 0 0;
 	.popular_posts_conteiner {
-		display: flex;
+		    display: flex;
 		position: relative;
 		.popular_posts_one {
 			width: 50%;
@@ -234,14 +248,14 @@ header {
 				line-height: 1.5em;
 			    position: absolute;
 			    top: 0;
-			    right: 0;
-			    bottom: 0;
 			    left: 0;
+			    bottom: 0;
 			    z-index: 10;
 			    display: flex;
 			    justify-content: flex-start;
 			    align-items: center;
-			    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+			    text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+			        color: #fff;
 				h1 {
 
 				}
@@ -270,14 +284,14 @@ header {
 				line-height: 1.5em;
 			    position: absolute;
 			    top: 0;
-			    right: 0;
 			    bottom: 0;
-			    left: 0;
+			    right: 0;
 			    z-index: 10;
 			    display: flex;
 			    justify-content: flex-start;
 			    align-items: center;
-			    text-shadow: 1px 1px 0 rgba(0,0,0,0.6);
+			    text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+			        color: #fff;
 				h1 {
 
 				}
