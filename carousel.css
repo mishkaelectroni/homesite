@@ -5,6 +5,7 @@
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+      font-family: arial, sans-serif;
 }
 
 
@@ -24,16 +25,43 @@ body {
 .navbar-wrapper > .container {
   padding-right: 0;
   padding-left: 0;
+  background: rgba(11,11,12,.5);
+  width: 100%;
 }
-.navbar-wrapper .navbar {
-  padding-right: 15px;
-  padding-left: 15px;
+.navbar-inverse .navbar-nav>li>a{
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: #F4540F;
+}
+.main-header-text {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+.main-header-text h1 {
+  color: #fff;
+  font-weight: 600;
 }
 .navbar-wrapper .navbar .container {
-  width: auto;
+  width: 80%;
 }
-
-
+.navbar-inverse {
+  background-color: transparent;
+  border: none;
+}
+.btn-primary {
+  background-color: #F4540F;
+  border-color: #FF5810;
+}
+.btn-primary:hover {
+  background-color: #619701;
+  border-color: #619701;
+}
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 
@@ -99,11 +127,11 @@ body {
 @media (min-width: 768px) {
   /* Navbar positioning foo */
   .navbar-wrapper {
-    margin-top: 20px;
+    width: 100%;
   }
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;
+    padding-left: 15px;*/
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
@@ -112,7 +140,7 @@ body {
 
   /* The navbar becomes detached from the top, so we round the corners */
   .navbar-wrapper .navbar {
-    border-radius: 4px;
+    border-radius: 1px;
   }
 
   /* Bump up size of carousel content */
