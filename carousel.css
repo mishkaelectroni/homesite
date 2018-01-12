@@ -49,6 +49,8 @@ body {
 }
 .navbar-wrapper .navbar .container {
   width: 80%;
+  padding-right: 0;
+  padding-left: 0;
 }
 .navbar-inverse {
   background-color: transparent;
@@ -61,6 +63,13 @@ body {
 .btn-primary:hover {
   background-color: #619701;
   border-color: #619701;
+}
+.main-header-text .form-control, .btn-default {
+  background-color: transparent;
+  height: auto;
+  line-height: 2.5;
+  margin-top: 1em;
+  border-radius: 26px;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
