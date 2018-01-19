@@ -7,7 +7,12 @@ body {
   color: #5a5a5a;
       font-family: arial, sans-serif;
 }
-
+a:hover {
+  text-decoration: none;
+}
+a {
+  color: #000;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -34,6 +39,20 @@ body {
   font-weight: 600;
 }
 .navbar-inverse .navbar-nav>li>a:hover {
+  color: #F4540F;
+}
+.top-header-text {
+  height: 3.5em;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+.top-header-text a{
+  color: #fff;
+
+}
+.top-header-text a:hover {
   color: #F4540F;
 }
 .main-header-text {
@@ -70,6 +89,16 @@ body {
   line-height: 2.5;
   margin-top: 1em;
   border-radius: 26px;
+  color: #fff;
+}
+.main-header-text .form-control {
+  border-right: none;
+}
+.main-header-text .btn-default {
+  border-left: none;
+}
+.main-header-text .btn-default:hover {
+  background-color: transparent;
 }
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -114,7 +143,12 @@ body {
   margin-left: 10px;
 }
 
-
+.marketing a{
+  color: #777;
+}
+.marketing a:hover{
+  color: #F4540F;
+}
 /* Featurettes
 ------------------------- */
 
@@ -169,3 +203,14 @@ body {
     margin-top: 120px;
   }
 }
+footer {
+  max-width: 100%;
+  width: 100%;
+  background-color: #1D1D1E;
+}
+ .pull-right{
+  /*width: 50px;*/
+  padding: 15px;
+  border: 1px solid #777;
+  border-radius: 100px;
+ }
