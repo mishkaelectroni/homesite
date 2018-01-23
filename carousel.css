@@ -9,6 +9,7 @@ body {
 }
 a:hover {
   text-decoration: none;
+   color: #F4540F;
 }
 a {
   color: #000;
@@ -47,6 +48,8 @@ a {
   color: #fff;
   padding-bottom: 1em;
   padding-top: 1em;
+   margin-left: auto;
+  margin-right: auto;
 }
 .top-header-text a{
   color: #fff;
@@ -207,6 +210,31 @@ footer {
   max-width: 100%;
   width: 100%;
   background-color: #1D1D1E;
+
+}
+footer .row {
+    margin-left: auto;
+  margin-right: auto;
+
+}
+.main-footer {
+  width: 80%;
+  background-color: #1D1D1E;
+}
+.main-footer ul{
+/*  display: inline-block;*/
+  color: #fff;  
+}
+.main-footer li{
+  list-style: none;
+}
+.main-footer h3, a{
+  color: #fff;
+}
+
+.privacy-footer {
+  background-color: #000;
+
 }
  .pull-right{
   /*width: 50px;*/
