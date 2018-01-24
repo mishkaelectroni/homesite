@@ -3,9 +3,9 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  padding-bottom: 40px;
   color: #5a5a5a;
       font-family: arial, sans-serif;
+  background-color: #F4F4F4;
 }
 a:hover {
   text-decoration: none;
@@ -13,6 +13,9 @@ a:hover {
 }
 a {
   color: #000;
+}
+ul {
+  padding-left: 0;
 }
 
 /* CUSTOMIZE THE NAVBAR
@@ -206,6 +209,22 @@ a {
     margin-top: 120px;
   }
 }
+
+.new-arrivals {
+
+}
+.new-arrivals h3{
+  margin-bottom: 1.5em;
+  padding-left: 15px;
+}
+.new-arrivals .thumbnail {
+  padding: 25px 20px;
+}
+
+.new-arrivals img {
+  margin-bottom: 2em;
+}
+
 footer {
   max-width: 100%;
   width: 100%;
@@ -220,6 +239,8 @@ footer .row {
 .main-footer {
   width: 80%;
   background-color: #1D1D1E;
+  padding-bottom: 4em;
+  padding-top: 3em;
 }
 .main-footer ul{
 /*  display: inline-block;*/
@@ -228,17 +249,35 @@ footer .row {
 .main-footer li{
   list-style: none;
 }
-.main-footer h3, a{
+.main-footer h3{
   color: #fff;
 }
-
+.main-footer a{
+ color: #F4540F;
+}
+.main-footer a:hover{
+ color: #fff;
+}
 .privacy-footer {
   background-color: #000;
-
+  padding-top: 1em;
+  padding-left: 11%;
+}
+.privacy-footer a{
+  color: #fff;
 }
  .pull-right{
-  /*width: 50px;*/
+ 
   padding: 15px;
   border: 1px solid #777;
   border-radius: 100px;
+  position: relative;
+  right: 3em;
+  bottom: 14em;
+ }
+ .pull-right a{
+  color: #fff;
+ }
+ .pull-right a:hover{
+  color: #F4540F;
  }
