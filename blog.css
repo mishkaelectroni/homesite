@@ -159,10 +159,24 @@ hr {
 .blog-search-right {
 
 }
+.blog-search-right small{
+  word-spacing: 2em;
+}
 .blog-search-right hr{
   padding: 20px 0;
   color: #eee;
 }
+.blog-search-right .btn-default {
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  color: #777;
+  border: 1px solid #777;
+} 
+.blog-search-right .btn-default:hover {
+  background-color: #F4540F;
+  color: #fff;
+}
+.blog-search-right 
 .marketing .col-lg-4 {
   margin-bottom: 20px;
   text-align: center;
